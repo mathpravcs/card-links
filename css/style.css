@@ -104,9 +104,9 @@ a[title]:hover::before {
 }
 
 .footer{
-    position: absolute;
+    position: static;
     bottom: 10px;
-    color: #fff;
+    color: #292929;;
     font-size: 1rem;
   
 }
@@ -130,11 +130,3 @@ a[title]:hover::before {
     }
 }
 
-@media (min-width: 521px) {
-
-    .footer {
-        color: #292929;
-        bottom: 5px;
-    }
-    
-}

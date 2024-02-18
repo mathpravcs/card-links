@@ -129,3 +129,12 @@ a[title]:hover::before {
         box-shadow: 5px 5px #eeaeca;
     }
 }
+
+@media (min-width: 521px) {
+
+    .footer {
+        color: #292929;
+        bottom: 5px;
+    }
+    
+}

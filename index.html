@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Links - Mathpravcs</title>
+</head>
+<body>
+    <section>
+        <header>
+            <img src="img/matheus.png" alt="logo">
+            <h3>Matheus Basilio</h3>
+            <p>Full Stack Developer</p>
+        </header>
+        <main>
+            <a href="https://mathpravcs.github.io/my-portfolio/"  title="Meu site"><i class="ri-pages-fill"></i></a>
+            <a href="https://www.linkedin.com/in/matheus-basilio10/" title="LinkedIn"><i class="ri-linkedin-box-fill" title="LinkedIn"></i></a>
+            <a href="https://www.instagram.com/m_basilio10?igsh=dmlja2s3OThvNm1p" title="Instagram"><i class="ri-instagram-fill" title="Instagram"></i></a>
+            <a href="https://github.com/mathpravcs" title="GitHub"><i class="ri-github-fill" title="GitHub"></i></a>
+            <a href="#" title="Play Audio" onclick="toggleAudio(); return false;">
+                <i id="audioIcon" class="ri-play-fill"></i>
+            </a>
+        </main>
+        <audio id="audioElement" src="audio.mp3"></audio>
+        <p class="footer">©Copyright 2024 - Matheus Basilio feito com ❤️ e ☕</p>
+    </section>
+
+    <script href="js/script.js"></script>
+    <script>
+        var audio = document.getElementById('audioElement');
+        var audioIcon = document.getElementById('audioIcon');
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.className = "ri-pause-fill";
+                document.querySelector('a[title="Play Audio"]').setAttribute('title', 'Pause Audio');
+            } else {
+                audio.pause();
+                audioIcon.className = "ri-play-fill";
+                document.querySelector('a[title="Pause Audio"]').setAttribute('title', 'Play Audio');
+            }
+        }
+    </script>
+</body>
+</html>
